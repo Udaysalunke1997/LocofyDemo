@@ -1,0 +1,109 @@
+.recommended-holidays,
+.view-all-holidays1 {
+  position: relative;
+  letter-spacing: 0.04em;
+  display: inline-block;
+}
+.recommended-holidays {
+  margin: 0;
+  flex: 1;
+  font-size: inherit;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: inherit;
+  min-width: 17.375rem;
+}
+.view-all-holidays1 {
+  width: 10.369rem;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.arrow-right-icon2 {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.rec-title,
+.view-all-holidays {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.view-all-holidays {
+  width: 12.494rem;
+  border-radius: var(--br-12xl);
+  background-color: var(--Background-Paper);
+  align-items: flex-start;
+  gap: var(--gap-3xs);
+  text-align: right;
+  font-size: var(--font-size-lg);
+  color: var(--color-cornflowerblue-300);
+}
+.rec-title {
+  align-self: stretch;
+  align-items: center;
+  row-gap: 20px;
+}
+.rec-cards-container,
+.view-all-bottom1 {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rec-cards-container {
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+  font-size: var(--font-size-xl);
+  color: var(--color-darkslategray-200);
+}
+.view-all-bottom1 {
+  width: 12.494rem;
+  border-radius: var(--br-12xl);
+  background-color: var(--Background-Paper);
+  display: none;
+  gap: var(--gap-3xs);
+  white-space: nowrap;
+  text-align: right;
+  font-size: var(--font-size-lg);
+  color: var(--color-cornflowerblue-300);
+}
+.recommended-holidays-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xl);
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1350px) {
+  .rec-title {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .rec-cards-container {
+    grid-row-gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(240px, 416px));
+  }
+}
+@media screen and (max-width: 800px) {
+  .recommended-holidays {
+    font-size: var(--font-size-5xl);
+  }
+  .rec-cards-container {
+    grid-template-columns: minmax(240px, 1fr);
+  }
+}
+@media screen and (max-width: 450px) {
+  .recommended-holidays {
+    font-size: var(--font-size-lg);
+  }
+}

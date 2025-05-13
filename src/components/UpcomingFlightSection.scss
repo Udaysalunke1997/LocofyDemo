@@ -1,0 +1,199 @@
+.recent-searches {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.recent-searches1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-mini);
+}
+.hotel-icon {
+  width: 4.088rem;
+  height: 4.088rem;
+  position: relative;
+}
+.hotel1 {
+  position: relative;
+  letter-spacing: 0.04em;
+}
+.hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+  text-align: left;
+}
+.background {
+  width: 4.088rem;
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--color-sandybrown);
+  height: 4.088rem;
+  display: none;
+}
+.ticket-icon {
+  height: 1.956rem;
+  width: 1.975rem;
+  position: relative;
+  z-index: 1;
+}
+.attractions-icon {
+  width: 4.088rem;
+  height: 4.088rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mid) var(--padding-base) var(--padding-mid-1);
+  box-sizing: border-box;
+}
+.attractions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.background1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-base);
+  background-color: var(--color-gold);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.train-icon {
+  position: absolute;
+  height: 48.47%;
+  width: 41.13%;
+  top: 26.45%;
+  right: 29.51%;
+  bottom: 25.08%;
+  left: 29.36%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.background2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-base);
+  background-color: var(--color-cornflowerblue-100);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.taxi-icon1 {
+  position: absolute;
+  height: 40.21%;
+  width: 40.57%;
+  top: 29.66%;
+  right: 29.57%;
+  bottom: 30.12%;
+  left: 29.86%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.taxi-icon {
+  width: 4.375rem;
+  height: 4.088rem;
+  position: relative;
+}
+.taxi1 {
+  width: 2.006rem;
+  position: relative;
+  letter-spacing: 0.04em;
+  display: inline-block;
+}
+.background3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-base);
+  background-color: var(--color-yellowgreen);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.movie-icon {
+  position: absolute;
+  height: 35.63%;
+  width: 39.91%;
+  top: 32.26%;
+  right: 29.97%;
+  bottom: 32.11%;
+  left: 30.12%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.trip-menus {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--gap-0);
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-100);
+}
+.prepare-menu {
+  justify-content: center;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-lg);
+  color: var(--color-lightgray);
+}
+.flight-details,
+.prepare-menu,
+.upcoming-flight-section,
+.upcoming-flight-section1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.flight-details {
+  justify-content: center;
+  gap: var(--gap-17xl);
+  font-size: var(--font-size-5xl);
+  color: var(--color-cornflowerblue-300);
+}
+.upcoming-flight-section,
+.upcoming-flight-section1 {
+  justify-content: flex-start;
+}
+.upcoming-flight-section1 {
+  gap: var(--gap-xl);
+}
+.upcoming-flight-section {
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1350px) {
+  .recent-searches1 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .flight-details {
+    gap: var(--gap-lg);
+  }
+}

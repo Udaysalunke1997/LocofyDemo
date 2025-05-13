@@ -1,0 +1,171 @@
+.matterhorn-suites-image {
+  align-self: stretch;
+  height: 12.5rem;
+  position: relative;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.entire-bungalow {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  color: var(--color-gray-100);
+}
+.matterhorn-suites,
+.night {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.04em;
+}
+.matterhorn-suites {
+  margin: 0;
+  font-size: var(--font-size-3xl);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: inherit;
+}
+.night {
+  font-size: var(--font-size-lg);
+}
+.stay-details-rows {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+  min-width: 9.5rem;
+}
+.video-icon {
+  height: 1.563rem;
+  width: 1.563rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.stay-details {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+}
+.empty-star,
+.star-icon {
+  position: relative;
+  flex-shrink: 0;
+}
+.star-icon {
+  height: 1.075rem;
+  width: 1.038rem;
+}
+.empty-star {
+  width: 1.563rem;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  display: inline-block;
+}
+.star-parent {
+  height: 1.188rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-11xs-8);
+  box-sizing: border-box;
+  gap: var(--gap-9xs-7);
+}
+.reviews {
+  width: 13.525rem;
+  position: relative;
+  letter-spacing: 0.04em;
+  color: var(--color-cornflowerblue-200);
+  display: inline-block;
+  flex-shrink: 0;
+}
+.rating {
+  align-self: stretch;
+  height: 1.188rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs-3);
+}
+.button1 {
+  position: relative;
+  font-size: var(--font-size-mini);
+  letter-spacing: 0.46px;
+  line-height: var(--font-size-7xl);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--color-cornflowerblue-200);
+  text-align: left;
+}
+.more-details-button {
+  cursor: pointer;
+  border: 1px solid var(--color-lavender-200);
+  padding: 0;
+  background-color: transparent;
+  align-self: stretch;
+  height: 2.875rem;
+  border-radius: var(--br-9xs);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.more-details-button:hover {
+  background-color: var(--color-lightsteelblue-300);
+  border: 1px solid var(--color-lightsteelblue-200);
+  box-sizing: border-box;
+}
+.hotel-card,
+.hotel-card-1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.hotel-card {
+  flex: 1;
+  border-radius: var(--br-3xs);
+  background-color: var(--Background-Paper);
+  border: 1px solid var(--color-whitesmoke);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-smi) var(--padding-xs);
+  gap: var(--gap-4xl);
+}
+.hotel-card:hover {
+  background-color: var(--color-gainsboro-100);
+  cursor: pointer;
+}
+.hotel-card-1 {
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xs);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 450px) {
+  .matterhorn-suites {
+    font-size: var(--font-size-lg);
+  }
+  .rating,
+  .stay-details {
+    flex-wrap: wrap;
+  }
+  .rating {
+    height: auto;
+  }
+}
